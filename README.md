@@ -20,7 +20,7 @@ The complete data stack involves the following tools:
 ## ⚙️ Data Pipeline Details
 
 ### 1. Data Processing with Databricks
-The raw dataset spans multiple gigabytes (**1.23 GB brut**). Using Spark SQL and the Medallion Architecture:
+The raw dataset, accessed from the [UN Global Commodity Trade Statistics on Kaggle](https://www.kaggle.com/datasets/unitednations/global-commodity-trade-statistics), spans multiple gigabytes (**1.23 GB brut**). Using Spark SQL and the Medallion Architecture:
 - **Bronze Layer**: Raw ingestion of global trade records.
 - **Silver Layer**: Data cleaning, handling missing values, standardizing formats, and filtering for Morocco's data.
 - **Gold Layer**: Aggregated and ready-to-load business-level data.
