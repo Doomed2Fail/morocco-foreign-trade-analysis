@@ -6,8 +6,9 @@ DataSet/
 SSIS-SSAS-SSMS Ressources/
 
 # Fichiers binaires Power BI (trop lourds ou sujets à beaucoup de conflits)
-Dashboard Power Bi/*.pbix
-*.pbix
+# (Commenté pour permettre le push du dashboard principal)
+# Dashboard Power Bi/*.pbix
+# *.pbix
 
 # Fichiers temporaires ou générés par divers IDEs
 .vs/
