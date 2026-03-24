@@ -28,9 +28,10 @@ The raw dataset spans multiple gigabytes (**1.23 GB brut**). Using Spark SQL and
 ### 2. ETL with SSIS
 The Extract, Transform, and Load (ETL) process is automated using SQL Server Integration Services (SSIS). 
 - `Load_Dimensions.dtsx`: Populating dimension tables such as `Dim_Categorie` and `Dim_Produit` using Lookups (`LKP_Categorie`, `LKP_Produit`) and Data Conversions.
-- `Load_Fact.dtsx`: Transforming and loading the bulk trade transactions into the `Fact_Commerce` table.
+![SSIS Load Dimensions](images/ssis_flow_dimensions.png)
 
-![SSIS Data Flow Component](images/ssis_flow.png)
+- `Load_Fact.dtsx`: Transforming and loading the bulk trade transactions into the `Fact_Commerce` table by looking up the correct foreign keys from the dimension tables.
+![SSIS Load Fact](images/ssis_flow_fact.png)
 
 ### 3. Star Schema Design
 The Data Warehouse was built in **SQL Server** using a Kimball methodology Star Schema. It provides optimal query performance for analytical reporting.
