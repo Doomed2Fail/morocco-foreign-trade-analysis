@@ -1,0 +1,18 @@
+# Données brutes et Gold
+DataSet/
+*.csv
+
+# Fichiers SSIS, SSAS et autres ressources
+SSIS-SSAS-SSMS Ressources/
+
+# Fichiers binaires Power BI (trop lourds ou sujets à beaucoup de conflits)
+Dashboard Power Bi/*.pbix
+*.pbix
+
+# Fichiers temporaires ou générés par divers IDEs
+.vs/
+.idea/
+*.user
+*.suo
+bin/
+obj/
